@@ -1,12 +1,13 @@
+@import url("https://css.gg/css?=|add");
+
 body {
     margin: 0;
     font-family: "Smythe", system-ui;
     font-weight: 400;
-} 
+}
 
 header {
     /* width: 600px; */
-    
 }
 
 .header-img {
@@ -22,13 +23,16 @@ header {
 .title-text {
     color: #fff;
     position: absolute;
-    margin-left: 25px;
+    /* margin-left: 25px; */
+    margin: auto 0 auto 25px;
     /* top: 60px; */
     /* left: 20px; */
     /* margin: 50px 0; */
 }
 
 .title-text h1 {
+    line-height: 32px;
+    font-size: 32px;
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -48,3 +52,123 @@ header {
     padding: 0;
 }
 
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 50px 30px 0;
+    padding-bottom: 50px;
+    border-bottom: solid 3px#D2D2D2;
+    /* margin-top: 50px; */
+}
+
+.item-img {
+    height: 80px;
+}
+
+.item-text {
+    padding-left:20px;
+    margin-right: auto;
+}
+
+.item-name {
+    margin: 0;
+    font-weight: normal;
+}
+
+.item-ingredients {
+    margin: 0;
+    color: #8B8B8B;
+}
+.item-price {
+    margin-top: 10px;
+    font-weight: normal;
+    
+}
+
+.add-btn {
+    font-family: "times new roman";
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    border-radius: 50%;
+    /* font-weight: bold; */
+    color: #3C3C3C;
+    border:3px solid#DEDEDE;   
+    background-color: #fff; 
+    font-size: 1.5em;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.add-btn:hover {
+    background-color: #c6c6c6;
+    color:#fff;
+    border:3px solid #c6c6c6;   
+
+}
+.order {
+    margin: auto 30px;
+    width: 100%;
+}
+.order-title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.order ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #393333;
+}
+
+.order ul div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.order ul div li,
+.order ul div p {
+    margin: auto 0;
+    font-size: x-large;
+}
+.order ul div button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto auto auto 10px;
+    background: none;
+    border: none;
+    font-size: small;
+    color: #BBBBBB;
+    /* margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto; */
+}
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    margin-top: 0;
+}
+
+.total-price p {
+    margin: 0;
+}
+
+.order-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin: 50px 0;
+    background-color: #16DB99;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
