@@ -47,11 +47,11 @@
                 </div>
             </div> -->
         </main>
-        <section id="your-order" class="hiddenx">
+        <section id="your-order" class="hidden">
             <div class="container">
                 <div class="order">
                     <h3 class="order-title">Your Order</h3>
-                    <ul class="">
+                    <ul id="order-details">
                         <div>
                             <li>Pizza</li>
                             <button>remove</button>
@@ -63,19 +63,36 @@
                             <p>$13</p>
                         </div>
                     </ul>
-                    <div class="total-price">
+                    <div class="total-price" >
                         <p>Total Price</p>
-                        <p>$37</p>
+                        <p id="total-price">$37</p>
                     </div>
-                    <button class="order-btn">Complete order</button>
+                    <button class="order-btn" id="complete-order">Complete order</button>
                 </div>
-
             </div>
+        </section>
 
+        <section class="modal hidden" id="modal">
+            <div class="modal-container">
+                <h3>Enter Card details</h3>
+                <form action="" class="card-details">
+                    <input type="text" placeholder="Enter your name" required/>
+                    <input type="text" placeholder="Enter your card number" required/>
+                    <input type="text" placeholder="Enter CVV" required/>
+                    <button class="order-btn" id="pay-btn">Pay</button>
+                </form>
+           
+            </div>
         </section>
-        <section class="modal">
-            
+        <section class="order-complete hidden" id="order-complete">
+            <div class="container">
+                <div class="order-complete-box">
+                    <h3>Thank you! Your order is on it's way!</h3>
+
+                </div>
+            </div>
         </section>
+
         <script src="app.js" type="module"></script>
     </body>
 </html>

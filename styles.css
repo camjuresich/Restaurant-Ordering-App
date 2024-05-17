@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    /* width: 600px; */
 }
 
 .header-img {
@@ -15,19 +14,13 @@ header {
     position: relative;
     width: 100%;
     height: 100px;
-    /* top: -40px; */
-    /* width: 500px;
-    height: 200px; */
+    
 }
 
 .title-text {
     color: #fff;
     position: absolute;
-    /* margin-left: 25px; */
     margin: auto 0 auto 25px;
-    /* top: 60px; */
-    /* left: 20px; */
-    /* margin: 50px 0; */
 }
 
 .title-text h1 {
@@ -60,7 +53,6 @@ header {
     margin: 50px 30px 0;
     padding-bottom: 50px;
     border-bottom: solid 3px#D2D2D2;
-    /* margin-top: 50px; */
 }
 
 .item-img {
@@ -89,9 +81,7 @@ header {
 
 .add-btn {
     font-family: "times new roman";
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     border-radius: 50%;
-    /* font-weight: bold; */
     color: #3C3C3C;
     border:3px solid#DEDEDE;   
     background-color: #fff; 
@@ -142,9 +132,7 @@ header {
     border: none;
     font-size: small;
     color: #BBBBBB;
-    /* margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto; */
+    cursor: pointer;
 }
 .total-price {
     display: flex;
@@ -168,7 +156,54 @@ header {
     padding: 15px 0;
     border-radius: 5px;
 }
-
+/* Utility classes */
 .hidden {
     display: none;
+}
+
+.modal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    background-color: white;
+    max-width: 540px;
+    height: fit-content;
+    inset: 0;
+    margin: auto auto;
+    box-shadow: 0 0 600px #393333;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.modal-container h3 {
+    margin: 40px auto 60px auto;
+}
+
+.card-details {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details input {
+    margin-top: 15px;
+    padding: 12px;
+}
+
+.order-complete-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 5px;
+    color: #065F46;
+    font-size: x-large;
+    background-color: #ECFDF5;
+}
+
+.order-complete-box h3 {
+    font-weight: normal;
 }
